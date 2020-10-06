@@ -40,7 +40,7 @@ class OpenIdAuthRoutes {
         this.router.get({
             path: `/auth/openid/login`,
             validate: {
-                query: config_schema_1.schema.object(),
+                query: config_schema_1.schema.any(),
             },
             options: {
                 authRequired: false,
